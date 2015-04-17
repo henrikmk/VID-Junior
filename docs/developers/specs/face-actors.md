@@ -70,6 +70,7 @@ The Actor Object is simply a list of either NONE, functions or blocks of functio
 |ON-LEFT-CLICK|When the left mouse button is clicked and then released over the face.|
 |ON-RIGHT-CLICK|When the right mouse button is clicked and then released over the face.|
 |ON-MIDDLE-CLICK|When the right mouse button is clicked and then released over the face.|
+|ON-DOUBLE-CLICK|When the left mouse button is double-clicked over the face.|
 |ON-LEFT-MOUSE-DOWN|When the left mouse button is pressed down over the face.|
 |ON-LEFT-MOUSE-UP|When the left mouse button is released over the face.|
 |ON-MIDDLE-MOUSE|When the middle mouse button is pressed down over the face.|
@@ -84,15 +85,26 @@ The Actor Object is simply a list of either NONE, functions or blocks of functio
 |ON-REDRAW|When the face is redrawn.|
 |ON-TIMER|When the timer event is received for the face.|
 |ON-KEY|When a key is pressed for the face, if it's in focus.|
+|ON-KEY-DOWN|When a key is pressed down for the face, if it's in focus.|
+|ON-KEY-UP|When a key is released for the face, if it's in focus.|
 |ON-ENTER|When the Enter or Return key is pressed for the face, if it's in focus.|
+|ON-TAB|When the Tab key is pressed for the face, if it's in focus.|
 |ON-ESCAPE|When pressing the Escape key for the face, if it's in focus.|
+|ON-INIT-VALIDATE|When initializing validation.|This would typically happen during the resetting of a form or at window open.|
 |ON-VALIDATE|When validating the face with VALIDATE-FACE.|
+|ON-MAXIMIZE|When the window face that contains this face is maximized.|
+|ON-MINIMIZE|When the window face that contains this face is minimized.|
+|ON-ENABLE|When the face is enabled.|
+|ON-DISABLE|When the face is disabled.|
+|ON-SELECT|When a selection of data/text inside the face has been performed.|
+|ON-DESELECT|When a deselection of data/text inside the face has been performed.|
 |ON-SHOW|When the face is displayed.|
 |ON-HIDE|When the face is hidden.|
 |ON-ALIGN|When the face is being aligned by the resizing system.|
 |ON-RESIZE|When the face is being resized by the resizing system.|
 |ON-INIT|When the face is being initialized.|Performed after initialization has completed.|
 |ON-SET|When a value is being set in the face with SET-FACE.|
+|ON-GET|When obtaining a value with GET-FACE.|
 |ON-RESET|When the face is being reset with RESET-FACE.|
 |ON-CLEAR|When the face is being cleared with CLEAR-FACE.|
 |ON-SETUP|When the face is being set up with SETUP-FACE.|
@@ -105,3 +117,4 @@ The Actor Object is simply a list of either NONE, functions or blocks of functio
 |ON-ACTOR|When an actor is performed (except this one).|This can be useful for debugging.|
 |ON-WINDOW-OPEN|When the face that is the window face, is opened.|
 |ON-WINDOW-CLOSE|When the face that is the window face, is closed.|
+|ON-WINDOW-INIT|When the window is being initialized.|This occurs before the window is opened as part of the window initialization policies.|
