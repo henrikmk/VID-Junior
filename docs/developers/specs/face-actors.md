@@ -90,7 +90,7 @@ The Actor Object is simply a list of either NONE, functions or blocks of functio
 |ON-ENTER|When the Enter or Return key is pressed for the face, if it's in focus.|
 |ON-TAB|When the Tab key is pressed for the face, if it's in focus.|
 |ON-ESCAPE|When pressing the Escape key for the face, if it's in focus.|
-|ON-INIT-VALIDATE|When initializing validation.|This would typically happen during the resetting of a form or at window open.|
+|ON-INIT-VALIDATION|When initializing validation.|This would typically happen during the resetting of a form or at window open.|
 |ON-VALIDATE|When validating the face with VALIDATE-FACE.|
 |ON-MAXIMIZE|When the window face that contains this face is maximized.|
 |ON-MINIMIZE|When the window face that contains this face is minimized.|
@@ -109,12 +109,18 @@ The Actor Object is simply a list of either NONE, functions or blocks of functio
 |ON-CLEAR|When the face is being cleared with CLEAR-FACE.|
 |ON-SETUP|When the face is being set up with SETUP-FACE.|
 |ON-POPUP|When the face generates a popup, using POPUP-FACE.|
-|ON-EDIT-MODE|When the face enters or exits edit mode.|FACE/EDIT-MODE? will be set correctly, when the actor is called, and so can be used to determine, if the face has entered or exited this mode.|
-|ON-EDIT-MOVE|When the face moves during edit mode.|
-|ON-EDIT-RESIZE|When the face resizes during edit mode.|
+|ON-MODE-EDIT|When the face enters edit mode.|FACE/EDIT-MODE? will be set correctly, when the actor is called, and so can be used to determine, if the face has entered or exited this mode.|
+|ON-MODE-EDIT-MOVE|When the face moves during edit mode.|
+|ON-MODE-EDIT-RESIZE|When the face resizes during edit mode.|
+|ON-MODE-ENTER|When the face enters a special mode.|This is run before any other mode-specific actor.|
+|ON-MODE-EXIT|When the face exits a special mode.|
 |ON-RELOCATE|When the face has been relocated in the face tree with RELOCATE-FACE.|
 |ON-SCREEN-ROTATE|When the screen changes orientation.|For phone/tablet interfaces.|
 |ON-ACTOR|When an actor is performed (except this one).|This can be useful for debugging.|
 |ON-WINDOW-OPEN|When the face that is the window face, is opened.|
 |ON-WINDOW-CLOSE|When the face that is the window face, is closed.|
 |ON-WINDOW-INIT|When the window is being initialized.|This occurs before the window is opened as part of the window initialization policies.|
+|ON-STATE|When the state is set for the face.|
+|ON-RELOCATE|When the face has been relocated to a different part of the face tree.|
+|ON-DIRTIFY|When the face has been marked as dirty.|
+|ON-CLEAN|When the face is no longer marked as clean.|
