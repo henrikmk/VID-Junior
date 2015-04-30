@@ -9,6 +9,20 @@ The idea of capabilities is to make it easy for the program writer to examine wh
 
 This would return FALSE for REBOL 2, but TRUE for REBOL 3.
 
+To check for multiple capabilities at one time, a block would be passed:
+
+```rebol
+>> capable-of [anti-aliased-fonts? open-gl?]
+== true
+```
+
+To check for any capabilities, the ```/ANY``` refinement could be used:
+
+```rebol
+>> capable-of/any [anti-aliased-fonts? open-gl?]
+== true
+```
+
 As an object, all capabilities can be examined via simple path notation, but by using a CAPABILITY function, it's possible to create standard fall-back actions for cases, where a capability asked for, does not exist. This can be useful, if you're asking for a capability with an older version of VID Junior.
 
 ## Stored Values
