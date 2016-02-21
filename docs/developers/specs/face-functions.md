@@ -4,20 +4,6 @@ The FACE functions are functions that apply directly to a face and possibly its 
 
 These functions are a central part in making the face tree more managable, both during the creation of the face tree and during the use of the face tree.
 
-### Root Faces
-
-|Function|Description|
-|--------|-----------|
-|MAKE-ROOT-FACE|This creates a root face (window face) and returns it.|
-|GET-ROOT-FACE|Return the root face (window face) of the passed face.|
-
-### Regular Faces
-
-|Function|Description|
-|--------|-----------|
-|ADD-FACE|This adds a new face object to the face passed to it.|
-|REMOVE-FACE|This removes a specific face object from the face passed to it.|
-
 ### Face Navigation
 
 |Function|Description|
@@ -37,6 +23,10 @@ These functions are a central part in making the face tree more managable, both 
 
 |Function|Description|
 |--------|-----------|
+|MAKE-ROOT-FACE|This creates a root face (window face) and returns it.|
+|GET-ROOT-FACE|Return the root face (window face) of the passed face.|
+|ADD-FACE|This adds a new face object to the face passed to it.|
+|REMOVE-FACE|This removes a specific face object from the face passed to it.|
 |OVER-FACE|Returns the face the mouse is hovering over.|
 |WITHIN-FACE?|Returns whether a face exists inside the pane of another face.|
 |SET-PARENT-FACE|This sets the parent face of the face passed to it. This is typically set during layout or during a face tree change.|
