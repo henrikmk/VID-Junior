@@ -27,6 +27,7 @@ These functions are a central part in making the face tree more managable, both 
 |GET-ROOT-FACE|Return the root face (window face) of the passed face.|
 |ADD-FACE|This adds a new face object to the face passed to it.|
 |REMOVE-FACE|This removes a specific face object from the face passed to it.|
+|CLONE-FACE|This clones a specific first face object and does an ADD-FACE operation to the second face passed to it.|
 |OVER-FACE|Returns the face the mouse is hovering over.|
 |WITHIN-FACE?|Returns whether a face exists inside the pane of another face.|
 |SET-PARENT-FACE|This sets the parent face of the face passed to it. This is typically set during layout or during a face tree change.|
