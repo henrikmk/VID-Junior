@@ -36,7 +36,7 @@ The face object is the building element of the GUI. It contains all necessary in
 |ID|none! binary!|none|A unique and persistent identifier for the face, which can be determined by a layout preprocessor. This is useful for automated testing.|
 |RELATED|||Describes a grouping that the face may belong under.|
 |EDIT-MODE?|logic!|false|Whether the face is in edit mode.|
-|HELP-MODE?|none! word!|none|Whether the face is in one of several help modes. The help mode is a word.|
+|HELP-MODE|none! word!|none|Whether the face is in one of several help modes. The help mode is a word.|
 |ABOUT|none! string!|none|A short help string for the face style.|
 |HELP|none! word! block!|none|A help word or selection block of word pairs to reference a help document, when the face is in a help mode.|
 |DOC|none! word!|none|A documentation word for a style reference document.|
