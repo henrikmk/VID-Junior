@@ -62,7 +62,7 @@ and last, but not least...
 
 ## Not Goals
 
-**Not cross-platform** - The intent is *not* to, with great effort and many spent hours, make the same user interfaces run on REBOL 2 and World despite many capability differences. This is about the *experience* of using the GUI system from the view of the program writer.
+**Not cross-platform** - The intent is *not* to, with great effort and many spent hours, make the same user interfaces run on REBOL 2, REBOL 3, Red and World despite many capability differences. This is about the *experience* of using the GUI system from the view of the program writer.
 
 **Not complex** - If a feature is too complicated, like anti-aliased rich text on REBOL 2, it will not be included, and we have already now a pretty good idea on what is possible on each programming language. That is where we take advantage of the capability model.
 
