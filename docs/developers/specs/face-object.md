@@ -27,14 +27,15 @@ The face object is the building element of the GUI. It contains all necessary in
 |TEXT|none! string! block!|none|The string to display using FONT and PARA styling objects. It can be either plain text or a rich text format dialect.|
 |ACTORS|object!|actor object|An object of actor functions assigned to the face. These will be described in a separate document.|
 |RATE|none! time!|none|The rate of timer events passed to the face.|
-|DISABLED|logic!|false|Whether the face is disabled, i.e. cannot be interacted with, by the user.|
+|DISABLED?|logic!|false|Whether the face is disabled, i.e. cannot be interacted with, by the user.|
+|DEFAULT?|logic!|false|Whether the face is the default.|
 |SHOW?|logic!|true|Whether the face is displayed.|
 |STATE|none! object!|none|The style specific state of the face. State objects can contain complex information about how to display the face, such as table headers, graph appearance, etc. and can be integrated with an undo/redo system. This object is here to avoid growing the face object itself in size for complex faces.|
 |DATA|any-type!|none|The data content of the face structured in any fashion as needed.|
 |DIRTY?|logic!|false|Whether the face needs to be updated.|
 |ACCESS|object!|object!|An object of accessor functions, used to manipulate the behavior and content of the face. These functions are called by face functions. Accessor functions are described in a different document.|
 |ID|none! binary!|none|A unique and persistent identifier for the face, which can be determined by a layout preprocessor. This is useful for automated testing.|
-|RELATED|||Describes a grouping that the face may belong under.|
+|RELATED|none! word! block!|none|Describes a grouping that the face may belong under.|
 |EDIT-MODE?|logic!|false|Whether the face is in edit mode.|
 |HELP-MODE|none! word!|none|Whether the face is in one of several help modes. The help mode is a word.|
 |ABOUT|none! string!|none|A short help string for the face style.|
