@@ -40,6 +40,8 @@ The face object is the building element of the GUI. It contains all necessary in
 |ABOUT|none! string!|none|A short help string for the face style.|
 |HELP|none! word! block!|none|A help word or selection block of word pairs to reference a help document, when the face is in a help mode.|
 |DOC|none! word!|none|A documentation word for a style reference document.|
+|TOOL-TIP|none! string! block! function!|none|A tool-tip for display, when hovering the mouse over the face or when invoked with SHOW-FACE-TOOL-TIP|
+|TOOL-TIP-DELAY|none! time!|0:0:1.00|The amount of time it takes, before displaying the tool-tip, when hovering the mouse over the face.|
 
 ## PANE word
 
